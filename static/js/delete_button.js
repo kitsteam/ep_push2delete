@@ -10,12 +10,12 @@ function sendDeletionRequest(){
     padId : padId
   }
   pad.collabClient.sendMessage(message);
-  modals.showModal('deleted')
+  modals.showModal('deleted');
 }
 
 exports.documentReady = function(hook_name, args, cb) {
   $('#deletePadButton').click(function() {
-    if(confirm('Delete this pad? (There\'s no going back!)')) sendDeletionRequest()
+    if(confirm('Wollen Sie dieses Pad wirklich löschen? Die Aktion kann nicht rückgängig gemacht werden.')) sendDeletionRequest()
   })
   cb()
 }

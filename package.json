@@ -15,6 +15,10 @@
     "type": "git",
     "url": "git://github.com/marcelklehr/ep_push2delete.git"
   },
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  },
   "author": {
     "name": "Marcel Klehr",
     "email": "mklehr@gmx.net"
