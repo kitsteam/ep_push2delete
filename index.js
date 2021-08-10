@@ -85,13 +85,13 @@ exports.eejsBlock_editbarMenuRight = function(hook_name, args, cb) {
   return cb();
 };*/
 
-/*exports.eejsBlock_mySettings = function(hook_name, args, cb) {
+exports.eejsBlock_mySettings = function(hook_name, args, cb) {
   let checkedState = 'checked';
-  if (settings.ep_push2delete) {
+  /*if (settings.ep_push2delete) {
     if (settings.ep_push2delete.disabledByDefault) {
       checkedState = '';
     }
-  }
+  }*/
   const ejsPath = 'ep_push2delete/templates/delete_entry.ejs';
   args.content += eejs.require(ejsPath, {checked: checkedState});
   return cb();
@@ -100,6 +100,6 @@ exports.eejsBlock_editbarMenuRight = function(hook_name, args, cb) {
 exports.eejsBlock_dd_view = (hookName, args, cb) => {
   const li = "<li><a href='#' onClick='$(\"#options-delete\").click();'>Löschen An/Aus</a></li>";
   args.content += li;
-};*/
+};
 
 
