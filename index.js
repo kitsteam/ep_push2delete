@@ -1,5 +1,5 @@
 var eejs = require('ep_etherpad-lite/node/eejs')
-var $ = require('ep_etherpad-lite/node/cheerio');
+var $ = require('ep_push2delete/node/cheerio');
 var settings = require('ep_etherpad-lite/node/utils/Settings');
 
 
@@ -72,7 +72,7 @@ exports.eejsBlock_editbarMenuRight = function(hook_name, args, cb) {
   return cb();
 };*/
 
-/*exports.eejsBlock_adminMenu = (hookName, context, cb) => {
+exports.eejsBlock_adminMenu = (hookName, context, cb) => {
   const ul = $('<ul>').html(context.content);
   const pfx = ul.find('li a').attr('href').match(/^((?:\.\.\/)*)/)[1];
   ul.append(
@@ -83,7 +83,7 @@ exports.eejsBlock_editbarMenuRight = function(hook_name, args, cb) {
               .text('Löschen An/Aus')));
   context.content = ul.html();
   return cb();
-};*/
+};
 
 exports.eejsBlock_mySettings = function(hook_name, args, cb) {
   let checkedState = 'checked';
