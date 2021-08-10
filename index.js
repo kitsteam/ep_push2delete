@@ -1,5 +1,5 @@
 var eejs = require('ep_etherpad-lite/node/eejs')
-const $ = require('ep_etherpad-lite/node/cheerio');
+var $ = require('ep_etherpad-lite/node/cheerio');
 var settings = require('ep_etherpad-lite/node/utils/Settings');
 
 
