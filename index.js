@@ -87,11 +87,11 @@ exports.eejsBlock_editbarMenuRight = function(hook_name, args, cb) {
 
 exports.eejsBlock_mySettings = function(hook_name, args, cb) {
   let checkedState = 'checked';
-  /*if (settings.ep_push2delete) {
+  if (settings.ep_push2delete) {
     if (settings.ep_push2delete.disabledByDefault) {
       checkedState = '';
     }
-  }*/
+  }
   const ejsPath = 'ep_push2delete/templates/delete_entry.ejs';
   args.content += eejs.require(ejsPath, {checked: checkedState});
   return cb();
