@@ -1,5 +1,6 @@
 var eejs = require('ep_etherpad-lite/node/eejs')
 var $ = require('ep_push2delete/node/cheerio');
+//var $ = require('ep_etherpad-lite/node/cheerio');
 var settings = require('ep_etherpad-lite/node/utils/Settings');
 
 
@@ -80,7 +81,7 @@ exports.eejsBlock_adminMenu = (hookName, context, cb) => {
           $('<a>')
               .attr('href', `${pfx}delete`)
               .attr('data-l10n-id', 'ep_adminpads2_manage-pads')
-              .text('Löschen An/Aus')));
+              .text('Löschbutton aktivieren')));
   context.content = ul.html();
   return cb();
 };
@@ -98,7 +99,7 @@ exports.eejsBlock_mySettings = function(hook_name, args, cb) {
 };
 
 exports.eejsBlock_dd_view = (hookName, args, cb) => {
-  const li = "<li><a href='#' onClick='$(\"#options-delete\").click();'>Löschen An/Aus</a></li>";
+  const li = "<li><a href='#' onClick='$(\"#options-delete\").click();'>Löschbutton aktivieren</a></li>";
   args.content += li;
 };
 

@@ -27,20 +27,24 @@ const postAceInit = (hook, context) => {
   };
   /* init */
   if (padcookie.getPref('delete') === false) {
-    $('#options-delete').val();
-    $('#options-delete').attr('checked', 'unchecked');
+    //$('#options-delete').val();
     $('#options-delete').attr('checked', false);
+    //$('#options-delete').attr('checked', false);
     $('#deletePadButton').attr('style', 'display: none !important');
-  } else {
-    $('#options-delete').attr('checked', 'checked');
+    delete_setting.disable();
+  } else if (padcookie.getPref('delete') === true) {
+    $('#options-delete').attr('checked', true);
     $('#deletePadButton').attr('style', 'display: inline !important');
+    delete_setting.enable();
   }
 
-  if ($('#options-delete').is(':checked')) {
+  /*if ($('#options-delete').is(':checked')) {
+      console.log("options delete is checked");
     delete_setting.enable();
   } else {
+      console.log("options delete is not checked");
     delete_setting.disable();
-  }
+  }*/
 
   /* on click */
   $('#options-delete').on('click', () => {
