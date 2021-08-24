@@ -15,7 +15,7 @@ function sendDeletionRequest(){
 
 exports.documentReady = function(hook_name, args, cb) {
   $('#deletePadButton').click(function() {
-    if(confirm('Wollen Sie dieses Pad wirklich löschen? Die Aktion kann nicht rückgängig gemacht werden.')) sendDeletionRequest()
+    if(confirm('Möchtest Du dieses Pad wirklich löschen? Die Aktion kann nicht rückgängig gemacht werden.')) sendDeletionRequest()
   })
   cb()
 }
