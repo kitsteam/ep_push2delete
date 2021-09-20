@@ -55,7 +55,7 @@ const postAceInit = (hook, context) => {
       padcookie.setPref('delete', false);
       delete_setting.disable();
     }
-    if (window.browser.chrome) window.location.reload();
+    /*if (window.browser.chrome)*/ window.location.reload();
   });
 };
 exports.postAceInit = postAceInit;
