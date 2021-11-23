@@ -19,9 +19,6 @@
   "dependencies": {
     "cheerio": "^0.22.0"
   },
-  "author": {
-    "name": "Tjark Harjes",
-    "email": "tjark.harjes@visionz.de"
-  },
+  "author": "marcelklehr (Marcel Klehr) <mklehr@gmx.net> (forked version), tjark002 (Tjark Harjes) <tjark.harjes@visionz.de> (new version)",
   "license": "MIT"
 }
