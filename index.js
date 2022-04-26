@@ -96,6 +96,9 @@ exports.eejsBlock_mySettings = function(hook_name, args, cb) {
   }
   const ejsPath = 'ep_push2delete/templates/delete_entry.ejs';
   args.content += eejs.require(ejsPath, {checked: checkedState});*/
+    
+  const ejsPath = 'ep_push2delete/templates/delete_button.ejs';
+  args.content += eejs.require(ejsPath);
   return cb();
 };
 
