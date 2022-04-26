@@ -117,8 +117,8 @@ exports.eejsBlock_mySettings = function(hook_name, args, cb) {
 };
 
 exports.eejsBlock_dd_view = (hookName, args, cb) => {
-  /*const li = "<li><a href='#' onClick='$(\"#options-delete\").click();'>Löschbutton aktivieren</a></li>";
-  args.content += li;*/
+  const li = "<li><a href='#' onClick='$(\"#options-delete\").click();'>Löschbutton aktivieren</a></li>";
+  args.content += li;
 };
 
 
