@@ -88,7 +88,7 @@ exports.eejsBlock_editbarMenuRight = function(hook_name, args, cb) {
 };*/
 
 exports.eejsBlock_adminMenu = (hookName, context, cb) => {
-  /*const ul = $('<ul>').html(context.content);
+  const ul = $('<ul>').html(context.content);
   const pfx = ul.find('li a').attr('href').match(/^((?:\.\.\/)*)/)[1];
   ul.append(
       $('<li>').append(
@@ -97,7 +97,7 @@ exports.eejsBlock_adminMenu = (hookName, context, cb) => {
               .attr('data-l10n-id', 'ep_adminpads2_manage-pads')
               .text('Löschbutton aktivieren')));
   context.content = ul.html();
-  return cb();*/
+  return cb();
 };
 
 exports.eejsBlock_mySettings = function(hook_name, args, cb) {
