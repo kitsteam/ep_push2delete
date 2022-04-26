@@ -58,9 +58,9 @@ exports.eejsBlock_editbarMenuRight = function(hook_name, args, cb) {
       hiddenState = "display: inline !important;";
     }
   }*/
-  let hiddenState = "display: inline !important;";
+  /*let hiddenState = "display: inline !important;";
   const ejsPath = 'ep_push2delete/templates/delete_button.ejs';
-  args.content = eejs.require(ejsPath, {hidden: hiddenState}) + args.content;
+  args.content = eejs.require(ejsPath, {hidden: hiddenState}) + args.content;*/
   /*if(!args.renderContext.req.url.match(/^\/(p\/r\..{16})/)) {
     args.content = eejs.require('ep_push2delete/templates/delete_button.ejs') + args.content;
   }*/
@@ -74,7 +74,7 @@ exports.eejsBlock_editbarMenuRight = function(hook_name, args, cb) {
   return cb();
 };*/
 
-exports.eejsBlock_adminMenu = (hookName, context, cb) => {
+/*exports.eejsBlock_adminMenu = (hookName, context, cb) => {
   const ul = $('<ul>').html(context.content);
   const pfx = ul.find('li a').attr('href').match(/^((?:\.\.\/)*)/)[1];
   ul.append(
@@ -85,6 +85,19 @@ exports.eejsBlock_adminMenu = (hookName, context, cb) => {
               .text('Löschbutton aktivieren')));
   context.content = ul.html();
   return cb();
+};*/
+
+exports.eejsBlock_adminMenu = (hookName, context, cb) => {
+  /*const ul = $('<ul>').html(context.content);
+  const pfx = ul.find('li a').attr('href').match(/^((?:\.\.\/)*)/)[1];
+  ul.append(
+      $('<li>').append(
+          $('<a>')
+              .attr('href', `${pfx}delete`)
+              .attr('data-l10n-id', 'ep_adminpads2_manage-pads')
+              .text('Löschbutton aktivieren')));
+  context.content = ul.html();
+  return cb();*/
 };
 
 exports.eejsBlock_mySettings = function(hook_name, args, cb) {
@@ -104,8 +117,8 @@ exports.eejsBlock_mySettings = function(hook_name, args, cb) {
 };
 
 exports.eejsBlock_dd_view = (hookName, args, cb) => {
-  const li = "<li><a href='#' onClick='$(\"#options-delete\").click();'>Löschbutton aktivieren</a></li>";
-  args.content += li;
+  /*const li = "<li><a href='#' onClick='$(\"#options-delete\").click();'>Löschbutton aktivieren</a></li>";
+  args.content += li;*/
 };
 
 
