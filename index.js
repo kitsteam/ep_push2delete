@@ -99,7 +99,7 @@ exports.eejsBlock_mySettings = function(hook_name, args, cb) {
     
   let hiddenState = "display: inline !important;";
   const ejsPath = 'ep_push2delete/templates/delete_button.ejs';
-  args.content += eejs.require(ejsPath);
+  args.content += eejs.require(ejsPath, {hidden: hiddenState});
   return cb();
 };
 
