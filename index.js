@@ -52,12 +52,13 @@ exports.handleMessage = function(hook_name, context, callback){
 }
 
 exports.eejsBlock_editbarMenuRight = function(hook_name, args, cb) {
-  let hiddenState = "display: none !important;";
-  if (settings.ep_push2delete) {
+  //let hiddenState = "display: none !important;";
+  /*if (settings.ep_push2delete) {
     if (!settings.ep_push2delete.disabledByDefault && !args.renderContext.req.url.match(/^\/(p\/r\..{16})/)) {
       hiddenState = "display: inline !important;";
     }
-  }
+  }*/
+  let hiddenState = "display: none !important;";
   const ejsPath = 'ep_push2delete/templates/delete_button.ejs';
   args.content = eejs.require(ejsPath, {hidden: hiddenState}) + args.content;
   /*if(!args.renderContext.req.url.match(/^\/(p\/r\..{16})/)) {
@@ -87,14 +88,14 @@ exports.eejsBlock_adminMenu = (hookName, context, cb) => {
 };
 
 exports.eejsBlock_mySettings = function(hook_name, args, cb) {
-  let checkedState = 'checked';
+  /*let checkedState = 'checked';
   if (settings.ep_push2delete) {
     if (settings.ep_push2delete.disabledByDefault) {
       checkedState = '';
     }
   }
   const ejsPath = 'ep_push2delete/templates/delete_entry.ejs';
-  args.content += eejs.require(ejsPath, {checked: checkedState});
+  args.content += eejs.require(ejsPath, {checked: checkedState});*/
   return cb();
 };
 
