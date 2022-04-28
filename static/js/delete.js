@@ -30,7 +30,8 @@ const postAceInit = (hook, context) => {
     //$('#options-delete').val();
     $('#options-delete').attr('checked', false);
     //$('#options-delete').attr('checked', false);
-    $('#deletePadButton').attr('style', 'display: none !important');
+    //$('#deletePadButton').attr('style', 'display: none !important');
+    $('#deletePadButton').attr('style', 'display: inline !important');
     delete_setting.disable();
   } else if (padcookie.getPref('delete') === true) {
     $('#options-delete').attr('checked', true);
