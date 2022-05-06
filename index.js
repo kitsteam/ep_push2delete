@@ -100,7 +100,7 @@ exports.eejsBlock_adminMenu = (hookName, context, cb) => {
   return cb();
 };
 
-/*exports.eejsBlock_mySettings = function(hook_name, args, cb) {
+exports.eejsBlock_mySettings = function(hook_name, args, cb) {
   /*let checkedState = 'checked';
   if (settings.ep_push2delete) {
     if (settings.ep_push2delete.disabledByDefault) {
@@ -112,9 +112,9 @@ exports.eejsBlock_adminMenu = (hookName, context, cb) => {
     
   /*let hiddenState = "display: inline !important;";
   const ejsPath = 'ep_push2delete/templates/delete_button.ejs';
-  args.content += eejs.require(ejsPath, {hidden: hiddenState});
+  args.content += eejs.require(ejsPath, {hidden: hiddenState});*/
   return cb();
-};*/
+};
 
 exports.eejsBlock_mySettings.dropdowns = function(hook_name, args, cb) {
   /*let checkedState = 'checked';
