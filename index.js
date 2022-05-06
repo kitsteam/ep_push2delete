@@ -100,7 +100,7 @@ exports.eejsBlock_adminMenu = (hookName, context, cb) => {
   return cb();
 };
 
-exports.eejsBlock_mySettings.dropdown = function(hook_name, args, cb) {
+exports.eejsBlock_mySettings.dropdowns = function(hook_name, args, cb) {
   /*let checkedState = 'checked';
   if (settings.ep_push2delete) {
     if (settings.ep_push2delete.disabledByDefault) {

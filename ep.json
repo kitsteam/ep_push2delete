@@ -2,7 +2,7 @@
     { "name": "pushbutton"
     , "hooks": { "eejsBlock_editbarMenuRight": "ep_push2delete/index"
                 , "handleMessage": "ep_push2delete/index"
-                , "eejsBlock_mySettings.dropdown": "ep_push2delete/index"
+                , "eejsBlock_mySettings.dropdowns": "ep_push2delete/index"
                 , "eejsBlock_dd_view" : "ep_push2delete/index"
                }
     , "client_hooks":
