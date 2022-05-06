@@ -3,6 +3,7 @@
     , "hooks": { "eejsBlock_editbarMenuRight": "ep_push2delete/index"
                 , "handleMessage": "ep_push2delete/index"
                 , "eejsBlock_mySettings": "ep_push2delete/index"
+                , "eejsBlock_mySettings.dropdowns": "ep_push2delete/index"
                 , "eejsBlock_dd_view" : "ep_push2delete/index"
                }
     , "client_hooks":

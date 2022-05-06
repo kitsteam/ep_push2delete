@@ -116,6 +116,22 @@ exports.eejsBlock_mySettings = function(hook_name, args, cb) {
   return cb();
 };
 
+exports.eejsBlock_mySettings.dropdowns = function(hook_name, args, cb) {
+  /*let checkedState = 'checked';
+  if (settings.ep_push2delete) {
+    if (settings.ep_push2delete.disabledByDefault) {
+      checkedState = '';
+    }
+  }
+  const ejsPath = 'ep_push2delete/templates/delete_entry.ejs';
+  args.content += eejs.require(ejsPath, {checked: checkedState});*/
+    
+  let hiddenState = "display: inline !important;";
+  const ejsPath = 'ep_push2delete/templates/delete_button1.ejs';
+  args.content += eejs.require(ejsPath, {hidden: hiddenState});
+  return cb();
+};
+
 exports.eejsBlock_dd_view = (hookName, args, cb) => {
   /*const li = "<li><a href='#' onClick='$(\"#options-delete\").click();'>Löschbutton aktivieren</a></li>";
   args.content += li;*/
