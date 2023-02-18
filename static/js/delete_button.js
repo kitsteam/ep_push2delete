@@ -11,6 +11,9 @@ function sendDeletionRequest(){
   }
   pad.collabClient.sendMessage(message);
   modals.showModal('deleted');
+  
+  // reload window, so that the current content is discarded:
+  window.location.reload();
 }
 
 exports.documentReady = function(hook_name, args, cb) {
