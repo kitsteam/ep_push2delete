@@ -30,8 +30,7 @@ exports.handleMessage = function(hook_name, context, callback){
     }
   }
   if(!isDeleteRequest){
-    callback(false);
-    return false;
+    return callback(false);
   }
   
   console.log('DELETION REQUEST!')
