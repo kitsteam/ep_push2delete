@@ -1,7 +1,7 @@
 var eejs = require('ep_etherpad-lite/node/eejs')
 //var $ = require('ep_push2delete/node/cheerio');
 //var $ = require('ep_etherpad-lite/node/cheerio');
-var settings = require('ep_etherpad-lite/node/utils/Settings');
+var Pad = require('ep_etherpad-lite/node/db/Pad').Pad
 
 
 /*var pluginSettings = settings.ep_push2delete;
@@ -12,8 +12,6 @@ pluginSettings.settingsDelete = true;*/
 * Handle incoming delete requests from clients
 */
 exports.handleMessage = function(hook_name, context, callback){
-  var Pad = require('ep_etherpad-lite/node/db/Pad').Pad
-
   // Firstly ignore any request that aren't about chat
   var isDeleteRequest = false;
   if(context) {
