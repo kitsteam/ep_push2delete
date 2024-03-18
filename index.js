@@ -12,7 +12,7 @@ pluginSettings.settingsDelete = true;*/
 * Handle incoming delete requests from clients
 */
 exports.handleMessage = function(hook_name, context, callback){
-  var Pad = require('ep_etherpad-lite/node/db/Pad.js').Pad
+  var Pad = require('ep_etherpad-lite/node/db/Pad').Pad
 
   // Firstly ignore any request that aren't about chat
   var isDeleteRequest = false;
