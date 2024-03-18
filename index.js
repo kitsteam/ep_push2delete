@@ -1,5 +1,6 @@
 var eejs = require('ep_etherpad-lite/node/eejs')
-var Pad = require('ep_etherpad-lite/node/db/Pad').Pad
+var PadContext = require('ep_etherpad-lite/node/db/Pad.ts')
+var Pad = PadContext.Pad
 
 /*
 * Handle incoming delete requests from clients
