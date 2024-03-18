@@ -1,7 +1,7 @@
 var eejs = require('ep_etherpad-lite/node/eejs')
 //var $ = require('ep_push2delete/node/cheerio');
 //var $ = require('ep_etherpad-lite/node/cheerio');
-var Pad = require('ep_etherpad-lite/node/db/Pad').Pad
+var Pad = require('ep_etherpad-lite/node/db/Pad.ts').Pad
 
 
 /*var pluginSettings = settings.ep_push2delete;
