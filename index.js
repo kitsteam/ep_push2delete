@@ -1,5 +1,5 @@
 var eejs = require('ep_etherpad-lite/node/eejs')
-var PadContext = require('ep_etherpad-lite/node/db/Pad.ts')
+var PadContext = require('ep_etherpad-lite/node/db/Pad')
 var Pad = PadContext.Pad
 
 /*
