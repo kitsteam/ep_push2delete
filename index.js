@@ -42,7 +42,11 @@ exports.handleMessage = function(hook_name, context, callback){
   }
 }
 
-exports.mySettings.dropdowns = function(_hook_name, args, cb) {
+exports.eejsBlock_mySettings = function(_hook_name, _args, cb) {
+  return cb();
+};
+
+exports.eejsBlock_mySettings.dropdowns = function(_hook_name, args, cb) {
   let hiddenState = "display: inline !important;";
   const ejsPath = 'ep_push2delete/templates/delete_button1.ejs';
   args.content += eejs.require(ejsPath, {hidden: hiddenState});

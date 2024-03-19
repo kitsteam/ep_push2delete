@@ -1,7 +1,8 @@
 { "parts": [
     { "name": "pushbutton"
     , "hooks": { "handleMessage": "ep_push2delete/index",
-                  "mySettings.dropdowns": "ep_push2delete/index"
+                 "eejsBlock_mySettings": "ep_push2delete/index",
+                 "eejsBlock_mySettings.dropdowns": "ep_push2delete/index"
                }
     , "client_hooks":
       { "documentReady": "ep_push2delete/static/js/delete_button" }
